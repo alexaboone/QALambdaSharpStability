@@ -1,0 +1,9 @@
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/bin/Release/netcoreapp2.1/rhel.7.2-x64/QA.deps.json
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/bin/Release/netcoreapp2.1/rhel.7.2-x64/QA.runtimeconfig.json
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/bin/Release/netcoreapp2.1/rhel.7.2-x64/QA.runtimeconfig.dev.json
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/bin/Release/netcoreapp2.1/rhel.7.2-x64/QA.dll
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/bin/Release/netcoreapp2.1/rhel.7.2-x64/QA.pdb
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/obj/Release/netcoreapp2.1/rhel.7.2-x64/QA.csprojAssemblyReference.cache
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/obj/Release/netcoreapp2.1/rhel.7.2-x64/QA.csproj.CoreCompileInputs.cache
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/obj/Release/netcoreapp2.1/rhel.7.2-x64/QA.dll
+/Users/alexaromasco/LambdaSharp/QALambdaSharp/QA/obj/Release/netcoreapp2.1/rhel.7.2-x64/QA.pdb

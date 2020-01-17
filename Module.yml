@@ -10,11 +10,70 @@ Description: Module description
 # The Items section defines values and resources for the module.
 Items:
 
-  - Variable: MyVariable
-    Description: Variable description
-    Value: A sample variable value for the module
-
-  - Function: QueryStability
+  - Function: QA
     Description: TO-DO - update function description
     Memory: 256
     Timeout: 30
+
+#  - Resource: QAMetrics
+#    Description: TO-DO - update resource description
+#    Type: AWS::DynamoDB::Table
+#    Scope:
+#      - QA
+#    Allow: Full
+#    Properties:
+#      # Documentation: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
+#      AttributeDefinitions:
+#        - AttributeName: testNameVersion
+#          AttributeType: S
+#        - AttributeName: gitRevision
+#          AttributeType: S
+#      KeySchema: # Required
+#        - AttributeName: testNameVersion
+#          KeyType: HASH
+#        - AttributeName: gitRevision
+#          KeyType: RANGE
+#      StreamSpecification:
+#        StreamViewType: NEW_IMAGE
+#      ProvisionedThroughput:
+#        ReadCapacityUnits: 5
+#        WriteCapacityUnits: 5
+#      TimeToLiveSpecification:
+#        AttributeName: expire
+#        Enabled: true
+        
+  - Resource: QAMetrics
+    Description: TO-DO - update resource description
+    Type: AWS::DynamoDB::Table
+    Scope:
+      - QA
+    Allow: Full
+    Properties:
+      # Documentation: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
+      AttributeDefinitions:
+        - AttributeName: testNameVersion
+          AttributeType: S
+        - AttributeName: gitRevision
+          AttributeType: S
+      KeySchema: # Required
+        - AttributeName: testNameVersion
+          KeyType: HASH
+        - AttributeName: gitRevision
+          KeyType: RANGE
+      StreamSpecification:
+        StreamViewType: NEW_IMAGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      TimeToLiveSpecification:
+        AttributeName: expire
+        Enabled: true
+
+  - Resource: DeployAlert
+    Description: TO-DO - update resource description
+    Type: AWS::SNS::Topic
+    
+  - Resource: alexaTemporaryQABucket
+    Description: Temporary Bucket for testing
+    Type: AWS::S3::Bucket
+    Allow: ReadWrite
